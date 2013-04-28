@@ -1,34 +1,15 @@
 'use strict';
 
-function MangaListCtrl($scope){
-    
-    $scope.mangas = 
-    [
-    {
-    "mangaId":"Conan",
-    "files":
-        [
-        { "mangaId":"Conan", "fileId":"849", "pages":21},
-        { "mangaId":"Conan", "fileId":"853", "pages":16},
-        { "mangaId":"Conan", "fileId":"854", "pages":16}
-        ]
-    },
-
-    {
-    "mangaId":"Death Note",
-    "files":
-        [
-        {"mangaId":"Death Note", "fileId":"1", "pages":13},
-        {"mangaId":"Death Note", "fileId":"2", "pages":13},
-        {"mangaId":"Death Note", "fileId":"3", "pages":13}
-        ]
-    }
-    ]
+function MangaListCtrl($scope, $http){
+    $http.get('mangas/mangas.json').success(function(data){
+        $scope.mangas = data;
+    });
     
     $scope.zh = "忙旮"
     $scope.isEmpty = function(x){
         return x ? ': ' + x : '';
     }
+    $scope.mangaOrderProp="date"
 }
 
 // Read Controller: The Core: Read a manga file!

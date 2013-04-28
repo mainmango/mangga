@@ -12,13 +12,9 @@
 <body>
     <section id="manga-list">
         <ul>
-            <li ng-repeat="manga in mangas | filter:query">
+            <li ng-repeat="manga in mangas | filter:query | orderBy:mangaOrderProp:1">
                 {{manga.mangaId}}
-                <ul>
-                    <li ng-repeat="file in manga.files | filter:query">
-                        FILE.{{file.fileId}}
-                    </li>
-                </ul>
+                FILE.{{manga.fileId}}
             </li>
         </ul>
         <aside>
