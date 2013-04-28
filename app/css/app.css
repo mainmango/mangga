@@ -23,7 +23,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body{
     background-color:black;
     color:white;
-    text-align:center;
 }
 h1{
     font-size:200%;
@@ -41,6 +40,13 @@ h2{
 }
 img{
     width:100%;
-    max-width:100%;
-    
+    max-width:;
+}
+/*list-view*/
+figure{
+    max-width:120px;
+}
+li{
+    display:inline-block;
+    margin:10px;
 }

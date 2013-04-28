@@ -10,11 +10,14 @@
 </head>
 
 <body>
-    <section id="manga-list">
+    <section id="manga-survey">
         <ul>
             <li ng-repeat="manga in mangas | filter:query | orderBy:mangaOrderProp:1">
                 {{manga.mangaId}}
                 FILE.{{manga.fileId}}
+                <figure>
+                    <img ng-src=" {{'img/'+ manga.mangaId + '/' + manga.fileId + '/' + '01' + '.png'}} ">
+                </figure>
             </li>
         </ul>
         <aside>
@@ -24,9 +27,9 @@
             <span>
                 {{mangas[0].files.length + mangas[1].files.length}}本{{zh}}
             </span>
+
         </aside>
     </section>
-
 
 </body>
 
