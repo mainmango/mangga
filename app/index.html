@@ -1,8 +1,9 @@
 <!doctype html>
-<html ng-app ng-controller="MangaListCtrl">
+<html ng-app="mangacab">
 <head>
 	<script src="js/angular.min.js"></script>
 	<script src="js/controllers.js"></script>
+	<script src="js/app.js"></script>
     <link rel="stylesheet" href="css/app.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -10,27 +11,9 @@
 </head>
 
 <body>
-    <section id="manga-survey">
-        <ul>
-            <li ng-repeat="manga in mangas | filter:query | orderBy:mangaOrderProp:1">
-                {{manga.mangaId}}
-                FILE.{{manga.fileId}}
-                <figure>
-                    <img ng-src=" {{'img/'+ manga.mangaId + '/' + manga.fileId + '/' + '01' + '.png'}} ">
-                </figure>
-            </li>
-        </ul>
-        <aside>
-            <span>
-                搜：<input ng-model="query">
-            </span>
-            <span>
-                {{mangas[0].files.length + mangas[1].files.length}}本{{zh}}
-            </span>
-
-        </aside>
-    </section>
-
+    
+    <div ng-view></div>
+     
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 'use strict';
 
-function MangaListCtrl($scope, $http){
+function MangaListCtrl($scope, $http, $routeParams){
     $http.get('mangas/mangas.json').success(function(data){
         $scope.mangas = data;
     });
@@ -10,9 +10,12 @@ function MangaListCtrl($scope, $http){
         return x ? ': ' + x : '';
     }
     $scope.mangaOrderProp="date"
+    $scope.query = $routeParams.mangaId
 }
 
 // Read Controller: The Core: Read a manga file!
-function ReadFileCtrl($scope, File) {
-    $scope.files = File.query();
+function ReadCtrl($scope, $routeParams) {
+    $scope.mangaId = $routeParams.mangaId
+    $scope.fileId = $routeParams.fileId
+    
 }
