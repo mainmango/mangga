@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app ng-controller="MangaListCtrl">
+<head>
+	<script src="js/angular.min.js"></script>
+	<script src="js/controllers.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>漫画ウイ {{isEmpty(query)}}</title>
+</head>
+
+<body>
+    <section id="manga-list">
+        <ul>
+            <li ng-repeat="manga in mangas | filter:query">
+                {{manga.mangaId}}
+                <ul>
+                    <li ng-repeat="file in manga.files | filter:query">
+                        FILE.{{file.fileId}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <aside>
+            <span>
+                搜：<input ng-model="query">
+            </span>
+            <span>
+                {{mangas[0].files.length + mangas[1].files.length}}本{{zh}}
+            </span>
+        </aside>
+    </section>
+
+
+</body>
+
+</html>
