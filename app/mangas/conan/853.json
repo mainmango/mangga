@@ -1,0 +1,28 @@
+{
+    "title": "名探偵コナン",
+    "fileNum": 853,
+    "imgPath": "img/Conan/Conan_FILE_853/",
+    "fanArt": [
+        {"type": "cover", "relURL": "Conan_853_c01_mhxy.png"},
+        {"type": "frame", "relURL": "Conan_853_a01_mhxy.png"},
+        {"type": "frame", "relURL": "Conan_853_a02_mhxy.png"}
+    ],
+    "pagesRelURL": [
+        "Conan_853_p01_mhxy.png",
+        "Conan_853_p02_mhxy.png",
+        "Conan_853_p03_mhxy.png",
+        "Conan_853_p04_mhxy.png",
+        "Conan_853_p05_mhxy.png",
+        "Conan_853_p06_mhxy.png",
+        "Conan_853_p07_mhxy.png",
+        "Conan_853_p08_mhxy.png",
+        "Conan_853_p09_mhxy.png",
+        "Conan_853_p10_mhxy.png",
+        "Conan_853_p11_mhxy.png",
+        "Conan_853_p12_mhxy.png",
+        "Conan_853_p13_mhxy.png",
+        "Conan_853_p14_mhxy.png",
+        "Conan_853_p15_mhxy.png",
+        "Conan_853_p16_mhxy.png"]
+}
+

@@ -1,0 +1,21 @@
+[
+{
+"mangaId":"Conan",
+"fileList":
+    [
+    {"mangaId":"Conan", "fileId":"849", "pages":21},
+    {"mangaId":"Conan", "fileId":"853", "pages":16},
+    {"mangaId":"Conan", "fileId":"854", "pages":16}
+    ]
+},
+
+{
+"mangaId":"Death Note",
+"fileList":
+    [
+    {"mangaId":"Death Note", "fileId":"1", "pages":13},
+    {"mangaId":"Death Note", "fileId":"2", "pages":13},
+    {"mangaId":"Death Note", "fileId":"3", "pages":13}
+    ]
+}
+]
