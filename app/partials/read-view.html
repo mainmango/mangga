@@ -1,5 +1,3 @@
-<section id="read">
-    <p ng-repeat="page in ['01','02','03']">
-        <img ng-src=" {{'img/Conan/849/' + page + '.png'}} ">
-    </p>
-</secion>
+<p ng-repeat="page in pages">
+    <img ng-src="pageURL[page]">
+</p>

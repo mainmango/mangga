@@ -23,6 +23,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body{
     background-color:black;
     color:white;
+    font-family:gill sans;
+}
+input{
+    font-family:inherit;
+    font-size:inherit;
 }
 h1{
     font-size:200%;

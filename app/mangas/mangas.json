@@ -1,8 +1,11 @@
 [
-        {"date":130409, "mangaId":"Conan",         "fileId":"849", "pages":21},
-        {"date":130503, "mangaId":"Conan",         "fileId":"853", "pages":16},
-        {"date":140101, "mangaId":"Conan",         "fileId":"854", "pages":16},
-        {"date":11,     "mangaId":"Death Note",    "fileId":"1",   "pages":13},
-        {"date":11,     "mangaId":"Death Note",    "fileId":"2",   "pages":13},
-        {"date":11,     "mangaId":"Death Note",    "fileId":"3",   "pages":13}
+        {"mangaId":"Conan", "fileId":849, "Color": {"00":"01"}, "keywords":["米花学园"]},
+        {"mangaId":"Conan", "fileId":853, "Color": {"00":"01"}, "keywords":["米花学园"]},
+        {"mangaId":"Conan", "fileId":854, "Color": {"00":"01"}, "keywords":["米花学园"]},
+        {"mangaId":"Conan", "fileId":818, "Color": {"00":"01"}, "keywords":["民工汉化","神秘列车"]},
+        {"mangaId":"Conan", "fileId":819, "Color": {"00":"01"}, "keywords":["民工汉化","神秘列车"]},
+        {"mangaId":"Conan", "fileId":820, "Color": {"00":"01"}, "keywords":["民工汉化","神秘列车"]},
+        {"mangaId":"Conan", "fileId":000, "Color": {"00":"01"}, "keywords":["民工汉化"]},
+        {"mangaId":"Conan", "fileId":000, "Color": {"00":"01"}, "keywords":["民工汉化"]},
+        {"mangaId":"Conan", "fileId":000, "Color": {"00":"01"}, "keywords":["民工汉化"]}
 ]
