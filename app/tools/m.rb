@@ -39,11 +39,14 @@ Conan/819 民工汉化:
 819-15.jpg
 819-16.jpg"
 
+manga_hash = {url: "", keywords: []}
+
 folders = ls_files.split(/\n\n/) # Array of "Path: List-Of-Filenames"
 folders.each do |f|
-    f = f.split(':')
+    f = f.split(/:\n/)
     keywords = f[0].split(/[\p{P},' ']/)
-    puts keywords
+    pages = f[1].split(/\n/)
+    puts pages.inspect
 end
 
 
