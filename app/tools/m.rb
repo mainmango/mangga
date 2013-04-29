@@ -39,15 +39,21 @@ Conan/819 民工汉化:
 819-15.jpg
 819-16.jpg"
 
-manga_hash = {url: "", keywords: []}
+mngs = [] #the arrawy to hold every single URL and Keywoards
 
 folders = ls_files.split(/\n\n/) # Array of "Path: List-Of-Filenames"
 folders.each do |f|
     f = f.split(/:\n/)
     keywords = f[0].split(/[\p{P},' ']/)
     pages = f[1].split(/\n/)
-    puts pages.inspect
+    path = "img/" #the relative path of the page file
+    pages.each do |p|
+        url = path + p
+        hash = {url: url, keywords: keywords}
+        mngs.push hash
+    end
 end
+puts mngs.to_json
 
 
 #puts f.inspect
