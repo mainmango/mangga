@@ -1,7 +1,7 @@
 'use strict';
 
 function MangaListCtrl($scope, $http, $routeParams){
-    $http.get('mangas/mangas.json').success(function(data){
+    $http.get('img/mngs.json').success(function(data){
         $scope.mangas = data;
     });
     

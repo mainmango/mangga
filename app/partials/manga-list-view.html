@@ -1,14 +1,14 @@
+    <span>
+        搜：<input ng-model="query">
+    </span>
+    
     <ul>
-        <li ng-repeat="manga in mangas | filter:query | orderBy:mangaOrderProp:1">
-            {{manga.mangaId}}
-            FILE.{{manga.fileId}}
+        <li ng-repeat="manga in mangas | filter:query">
             <figure>
-                <img ng-src=" {{'img/'+ manga.mangaId + '/' + manga.fileId + '/' + '01' + '.png'}} ">
+                <img ng-src="{{'img/Conan' + '_save_for_web_jpeg30_120px' + manga.url}}">
             </figure>
         </li>
     </ul>
     <aside>
-        <span>
-            搜：<input ng-model="query">
-        </span>
+
     </aside>
